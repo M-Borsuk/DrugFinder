@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load render_table from django_tables2 %}
+{% block content %}
+<div class="cases">
+    <div class="container-fluid">
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage text_align_center ">
+                <h2>RESULTS</h2>
+             </div>
+          </div>
+       </div>
+       {% render_table table %}
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- about -->
+<div class="cases">
+   <div class="container_width">
+      <div class="row d_flex">
+             <div class="col-md-7">
+            <div class="titlepage text_align_left">
+               <h2>What is a DrugFinder?</h2>
+               <p>DrugFinder is an AI-powered web application, that allows the users to find the best drug for their disease. It makes use of one of the most powerful NLP algorithm to detect the disease in the text.
+               </p>
+            </div>
+         </div>
+         <div class="col-md-5">
+            <div class="about_img text_align_center">
+               <figure><img src={% static "images/about1.png" %} alt="#"/></figure>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="protect">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titlepage text_align_center">
+               <h2>How does it work?</h2>
+               <p>The process of finding a drug consists of three steps
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+     <div class="protect_bg">
+   <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+            <!--  Demos -->
+            <div class="owl-carousel owl-theme">
+               <div class="item">
+                  <div class="protect_box text_align_center">
+                    <div class="desktop">
+                     
+                     <h1>Enter your text</h1>
+                     <span>The user enters the doctor's note through the web application</span>
+                    </div>
+                     
+                  </div>
+               </div>
+               <div class="item">
+                    <div class="protect_box text_align_center">
+                    <div class="desktop">
+                  
+                     <h1>Let the AI find your disease</h1>
+                     <span>The AI algorithm detects your disease from the text.</span>
+                    </div>
+                     
+                  </div>
+               </div>
+               <div class="item">
+                   <div class="protect_box text_align_center">
+                    <div class="desktop">
+                       
+                     <h1>See the best drug for you!</h1>
+                     <span>The result of the AI algorithm is matched with the database of drugs and the result is ready for you!</span>
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- end about -->
+{% endblock content %}
